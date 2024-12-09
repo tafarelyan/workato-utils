@@ -1,0 +1,4 @@
+def get_field_by_id_and_value_type(field_list, field_id, value_type='value'):
+    for item in field_list:
+        if item.get('field', {}).get('id') == field_id:
+            return item.get(value_type)
